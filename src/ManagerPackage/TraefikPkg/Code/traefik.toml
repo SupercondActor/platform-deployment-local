@@ -62,7 +62,7 @@ defaultEntryPoints = ["http", "https"]
 # Optional
 # Default: os.Stdout
 #
-#filePath = "/TraeficLogFilesHere/log.txt"
+filePath = "/TraeficLogFilesHere/log.txt"
 
 # Format is either "json" or "common".
 #
