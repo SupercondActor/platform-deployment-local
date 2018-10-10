@@ -4,6 +4,8 @@ The Business Platform allows deployment of multiple orchestrated JavaScript serv
 
 This project contains setup scripts and application files necessary to deploy and configure Service Manager and Service Host applications to the Local Service Fabric cluster.
 
+Detailed documentation at https://www.SupercondActor.com/documentation/
+
 ## Prerequisites
 
 Before you run provided PoweShell scripts make sure your computer meets the software prerequisites outlined below.   
