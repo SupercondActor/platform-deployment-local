@@ -45,8 +45,8 @@ defaultEntryPoints = ["http", "https"]
 		[[entryPoints.https.tls.certificates]]
 		certFile = "certs/serverssl.crt"
 		keyFile = "certs/serverssl.key"
-	[entryPoints.traefik]
-	address = ":8080"
+#	[entryPoints.traefik]
+#	address = ":8080"
 
 # Enable access logs
 # By default it will write to stdout and produce logs in the textual

@@ -99,7 +99,7 @@ try {
     Write-Host ("Application Id: " + $azureAdApp.ApplicationId.Guid)
     Write-Host ("Tenant Id: " + $subscription.TenantId)
 
-    $appParams = @{"SupercondActor.Platform.WebManager_AuthClientID" = $azureAdApp.ApplicationId.Guid.ToString(); "SupercondActor.Platform.WebManager_AuthTenantID" = $subscription.TenantId}
+    $appParams = @{"SupercondActor.Platform.WebManager_InstanceCount" = "1"; "Traefik_InstanceCount" = "1"; "SupercondActor.Platform.WebManager_AuthClientID" = $azureAdApp.ApplicationId.Guid.ToString(); "SupercondActor.Platform.WebManager_AuthTenantID" = $subscription.TenantId}
 
     Write-Host ((Get-Date -Format T) + " - Azure AD Application Registration complete.") -ForegroundColor Green
 
@@ -142,8 +142,10 @@ try {
     # Remove the application package to free system resources.
     Remove-ServiceFabricApplicationPackage -ApplicationPackagePathInImageStore $serviceAppName
 
+    $busAppParams = @{"SupercondActor.Platform.SF.NodeHostService_InstanceCount" = "1"}
+
     # Create the application instance.
-    New-ServiceFabricApplication -ApplicationName $serviceInstanceName -ApplicationTypeName $serviceAppType -ApplicationTypeVersion 1.0.0
+    New-ServiceFabricApplication -ApplicationName $serviceInstanceName -ApplicationTypeName $serviceAppType -ApplicationTypeVersion 1.0.0 -ApplicationParameter $busAppParams
 
 
     Write-Host ((Get-Date -Format T) + " - All done!") -ForegroundColor Green

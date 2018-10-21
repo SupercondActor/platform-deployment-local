@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="SupercondActor.Platform.WebManagerAppType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric" ManifestId="afdca280-a356-46e5-b29a-9ca96fdbc026">
   <Parameters>
-    <Parameter Name="SupercondActor.Platform.WebManager_InstanceCount" DefaultValue="1" />
-    <Parameter Name="Traefik_InstanceCount" DefaultValue="1" />
+    <Parameter Name="SupercondActor.Platform.WebManager_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="Traefik_InstanceCount" DefaultValue="-1" />
     <Parameter Name="SupercondActor.Platform.WebManager_AuthClientID" DefaultValue="" />
     <Parameter Name="SupercondActor.Platform.WebManager_AuthTenantID" DefaultValue="" />
     <Parameter Name="SupercondActor.Platform.WebManager_AIKey" DefaultValue="891fdd63-8353-4b5b-b5c3-47418e8e5fe6" />

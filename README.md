@@ -1,8 +1,11 @@
 # Service Fabric Business Platform
+## Deployment to local development cluster
 
 The Business Platform allows deployment of multiple orchestrated JavaScript services to the Service Fabric cluster, enjoying full range of security, performance, and application lifecycle management capabilities.
 
-This project contains setup scripts and application files necessary to deploy and configure Service Manager and Service Host applications to the Local Service Fabric cluster.
+<img src="https://www.supercondactor.com/images/SupercondActorPlatformInfo.svg" alt="Service Fabric Business Platform" />
+
+This repository contains setup scripts and application files necessary to deploy and configure Service Manager and Service Host applications to the Local Service Fabric cluster.
 
 Detailed documentation at https://www.SupercondActor.com/documentation/
 

@@ -34,7 +34,7 @@
            replicas of different partitions that are placed in your code. -->
   <Resources>
     <Endpoints>
-      <Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" Port="32006" />
+      <Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" Port="57077" />
     </Endpoints>
   </Resources>
 </ServiceManifest>
