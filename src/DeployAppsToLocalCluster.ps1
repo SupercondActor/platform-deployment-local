@@ -142,7 +142,7 @@ try {
     # Remove the application package to free system resources.
     Remove-ServiceFabricApplicationPackage -ApplicationPackagePathInImageStore $serviceAppName
 
-    $busAppParams = @{"SupercondActor.Platform.SF.NodeHostService_InstanceCount" = "1"}
+    $busAppParams = @{"SupercondActor.Platform.SF.LongRunningService_InstanceCount" = "1"; "SupercondActor.Platform.SF.ApiService_AuthClientID" = $azureAdApp.ApplicationId.Guid.ToString(); "SupercondActor.Platform.SF.ApiService_AuthTenantID" = $subscription.TenantId}
 
     # Create the application instance.
     New-ServiceFabricApplication -ApplicationName $serviceInstanceName -ApplicationTypeName $serviceAppType -ApplicationTypeVersion 1.0.0 -ApplicationParameter $busAppParams

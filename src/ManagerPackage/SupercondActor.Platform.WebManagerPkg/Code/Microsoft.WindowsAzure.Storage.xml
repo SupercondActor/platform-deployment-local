@@ -15119,7 +15119,7 @@
             The total length of the download.
             </summary>
         </member>
-        <member name="M:Microsoft.WindowsAzure.Storage.Blob.ParallelDownloadToFile.Start(Microsoft.WindowsAzure.Storage.Blob.CloudBlob,System.String,System.IO.FileMode,System.Int32,System.Nullable{System.Int64},System.Int64,System.Nullable{System.Int64},Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)">
+        <member name="M:Microsoft.WindowsAzure.Storage.Blob.ParallelDownloadToFile.Start(Microsoft.WindowsAzure.Storage.Blob.CloudBlob,System.String,System.IO.FileMode,System.Int32,System.Nullable{System.Int64},System.Int64,System.Nullable{System.Int64},System.Int32,Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)">
             <summary>
             Starts the download of a blob to a file.
             </summary>

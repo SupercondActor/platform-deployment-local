@@ -1,21 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
-  <Section Name="PlatformBackup">
-    <Parameter Name="StorageConnectionString" Value="UseDevelopmentStorage=true" />
-    <Parameter Name="ContainerName" Value="supercondactor-backup-container" />
-    <Parameter Name="LibrarianBlobName" Value="Librarian" />
-    <Parameter Name="BackupBlobRootFolderName" Value="BackupRoot" />
-    <Parameter Name="MaxIncrementalBackups" Value="20" />
-    <Parameter Name="ZipBufferSize" Value="81920" />
-  </Section>
-  <Section Name="Script">
-    <Parameter Name="InitializeScripterOnEveryCall" Value="true" />
-    <Parameter Name="DefaultScriptTimeoutMillis" Value="30000" />
-    <Parameter Name="HostObjectName" Value="_sys_ScriptHost" />
-    <Parameter Name="AssembliesRootName" Value="_sys_DotNetAssembly" />
-    <Parameter Name="AppSettingsObjectName" Value="_sys_AppSettings" />
-    <Parameter Name="ScriptCacheExpirationSeconds" Value="300" />
-  </Section>
   <Section Name="BusinessService">
     <Parameter Name="RetryIntervalMillisec" Value="100" />
     <Parameter Name="RetryMaxCount" Value="100" />

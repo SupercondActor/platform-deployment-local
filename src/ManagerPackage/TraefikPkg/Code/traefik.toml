@@ -7,14 +7,14 @@
 # Optional
 # Default: false
 #
-debug = true
+# debug = true
 
 # Traefik logs file
 # If not defined, logs to stdout
 #
 # Optional
 #
-# traefikLogsFile = "log/traefik.log"
+traefikLogsFile = "log/traefik.log"
 
 # Log level
 #
